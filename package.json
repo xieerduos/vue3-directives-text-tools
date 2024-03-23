@@ -1,6 +1,6 @@
 {
   "name": "vite-tooltip",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -14,5 +14,19 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "vite": "^5.2.0"
+  },
+  "keywords": [
+    "Custom Vue3 directives",
+    "vite-tooltip",
+    "v-my-tooltip",
+    "v-adjust-text",
+    "vue3",
+    "javascript"
+  ],
+  "author": "李钟意<coder.zhongyi.li@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xieerduos/vue3-directives-text-tools.git"
   }
 }
