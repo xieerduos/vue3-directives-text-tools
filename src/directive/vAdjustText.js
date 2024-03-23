@@ -48,7 +48,7 @@ function abbreviateFileName(el, fileName, fileType) {
   el.innerText = bestFit; // 应用最合适的缩写，减少DOM操作
 
   // 如果文本与一开始的相同，那么使用尾部...的方式
-  return bestFit === fileName;
+  return bestFit.trim() === fileName.trim();
 }
 
 function applyAbbreviationIfNeeded(el, binding) {
@@ -59,6 +59,10 @@ function applyAbbreviationIfNeeded(el, binding) {
 
   // 如果文本已经适合显示，就不进行任何操作
   if (el.scrollWidth <= el.offsetWidth) {
+    // 修复不显示省略号也显示tooltip的问题
+    if (el.classList.contains("show-my-tooltip")) {
+      el.classList.remove("show-my-tooltip");
+    }
     return;
   }
 
