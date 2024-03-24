@@ -11,6 +11,11 @@ body,
   width: 100vw;
   height: 100vh;
   box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#app {
+  padding-bottom: 120px;
 }
 
 ul,
@@ -21,8 +26,8 @@ li {
 }
 
 .filelist-wrap {
-  position: fixed;
-  margin-top: 15vh;
+  /* position: fixed; */
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   width: 60vw;

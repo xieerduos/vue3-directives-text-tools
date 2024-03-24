@@ -115,6 +115,7 @@ export const vMyTooltip = {
   },
   unmounted(el) {
     el._showTooltip && el.removeEventListener("mouseenter", el._showTooltip);
+    el._showTooltip && el.removeEventListener("mousemove", el._showTooltip);
     el._hideTooltip && el.removeEventListener("mouseleave", el._hideTooltip);
 
     // 从全局数组中移除对应的hideTooltip
